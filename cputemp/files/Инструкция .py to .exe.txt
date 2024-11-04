@@ -1,5 +1,3 @@
-https://internal.rtp.by:8445/articles/SER-A-41877640/Auto-py-to-exe-python
-
 pip install auto-py-to-exe
 
 auto-py-to-exe
