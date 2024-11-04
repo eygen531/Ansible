@@ -1,0 +1,40 @@
+[windows_users]
+40winsamuilovich ansible_host=192.168.1.40
+87kashkan ansible_host=192.168.1.87
+99kopilov ansible_host=192.168.1.99
+90scherba ansible_host=192.168.1.90
+42vorobev ansible_host=192.168.1.42
+160ognevoi ansible_host=192.168.1.160
+212kritski ansible_host=192.168.1.212
+214kovalchuk ansible_host=192.168.1.214
+169voitihovski ansible_host=192.168.1.169
+36lopatkin ansible_host=192.168.1.36
+73romanovski ansible_host=192.168.1.73
+129zhilko ansible_host=192.168.1.129
+76a_gerasimenko ansible_host=192.168.1.76
+233sazanov ansible_host=192.168.1.233
+
+[windows_servers]
+211win ansible_host=192.168.1.211
+209runner ansible_host=192.168.1.209
+94runner ansible_host=192.168.1.94
+200runner ansible_host=192.168.1.200
+#установил вручную без ssh AD204 ansible_host=192.168.1.204
+
+[windows_users:vars]
+ansible_user=e.samuilovich@SKB.RTP
+#ansible_password=
+ansible_connection=ssh
+ansible_shell_type=cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas
+
+[windows_servers:vars]
+ansible_user=e.samuilovich@SKB.RTP
+#ansible_password=
+ansible_connection=ssh
+ansible_shell_type=cmd
+ansible_ssh_common_args=-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+ansible_ssh_retries=3
+ansible_become_method=runas

@@ -1,0 +1,28 @@
+---
+- name: cputempinstall
+  hosts: all
+  become: false
+  tasks:
+    - name: folder
+      ansible.windows.win_file:
+        path: D:\cpu
+        state: directory
+
+    - name: copy files exporter
+      ansible.windows.win_copy:
+        src: /home/serv-docker/ansible/files/install.bat
+        dest: D:\cpu\install.bat
+
+    - name: copy files run_cpu_py
+      ansible.windows.win_copy:
+        src: /home/serv-docker/ansible/files/cputemp.zip
+        dest: D:\cpu\cputemp.zip
+
+    - name: run bat
+      ansible.windows.win_powershell:
+        script: cd d:\cpu | D:\cpu\install.bat
+
+    - name: delete files
+      ansible.windows.win_shell: |
+        Remove-Item -Path 'D:\cpu\install.bat' -Force
+        Remove-Item -Path 'D:\cpu\cputemp.zip' -Force
