@@ -1,0 +1,11 @@
+https://internal.rtp.by:8445/articles/SER-A-41877640/Auto-py-to-exe-python
+
+pip install auto-py-to-exe
+
+auto-py-to-exe
+
+выбираем скрипт питона cpu.py
+
+Нажимаем кнопку Convert .py to .exe
+
+На выходе получаем папку _internal и cpu.exe

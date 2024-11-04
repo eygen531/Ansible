@@ -1,0 +1,2 @@
+windows_exporter-0.25.1-amd64.msi filter=lfs diff=lfs merge=lfs -text
+cputemp.zip filter=lfs diff=lfs merge=lfs -text

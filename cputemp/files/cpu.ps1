@@ -1,0 +1,1 @@
+Start-Process "C:\skb\cpu.exe" -WindowStyle Hidden
