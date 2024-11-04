@@ -1,5 +1,3 @@
-Ansible так же установлен на [192.168.1.201](https://internal.rtp.by:8445/articles/SER-A-6324304/1921681201-dockerskbrtp)
-
 ## Для разворачивания нового сервера Ansible необходимо:
 
 1.  Склонить текущий репозиторий git@internal.rtp.by:common/ansible.git
