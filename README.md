@@ -1,6 +1,6 @@
 ## Для разворачивания нового сервера Ansible необходимо:
 
-1.  Склонить текущий репозиторий git@internal.rtp.by:common/ansible.git
+1.  Склонить текущий репозиторий git@github.com:eygen531/Ansible.git
 
 2.  Установить Ansible:
 
@@ -24,7 +24,7 @@ sudo apt-get install ansible
 
 
 
-## На хостах к которым будет применяться конфигурация Ansible должно быть установленно **_installsshserver.ps1_** или прописанны команды под администратором в powershell:
+## На хостах на windows к которым будет применяться конфигурация Ansible должно быть установленно **_installsshserver.ps1_** или прописанны команды под администратором в powershell:
 
 ```
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
